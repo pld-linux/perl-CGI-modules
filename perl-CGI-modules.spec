@@ -8,6 +8,7 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-modules-%{version}.tar.gz
+Patch:		perl-CGI-modules-paths.patch
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -22,6 +23,7 @@ CGI-modules jest zestawem modu³ów do wykorzystania przy pisaniu skryptów CGI.
 
 %prep
 %setup -q -n CGI-modules-%{version}
+%patch -p1
 
 %build
 perl Makefile.PL
@@ -49,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{perl_sitelib}/CGI/*.pm
 %{perl_sitelib}/CGI/test.pl
-%{perl_sitearch}/auto/CGI/*
+%{perl_sitearch}/auto/CGI/.packlist
 
 %{_mandir}/man3/*
