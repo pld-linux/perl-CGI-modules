@@ -1,0 +1,27 @@
+diff -urN CGI-modules-2.76/CGI/Base.pm CGI-modules-2.76.new/CGI/Base.pm
+--- CGI-modules-2.76/CGI/Base.pm	Sat Apr  5 04:27:34 1997
++++ CGI-modules-2.76.new/CGI/Base.pm	Sat Oct  2 23:34:19 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ package CGI::Base;
+ 
+diff -urN CGI-modules-2.76/CGI/MiniSvr.pm CGI-modules-2.76.new/CGI/MiniSvr.pm
+--- CGI-modules-2.76/CGI/MiniSvr.pm	Sun Nov 17 05:18:18 1996
++++ CGI-modules-2.76.new/CGI/MiniSvr.pm	Sat Oct  2 23:34:30 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ package CGI::MiniSvr;
+ 
+diff -urN CGI-modules-2.76/CGI/Request.pm CGI-modules-2.76.new/CGI/Request.pm
+--- CGI-modules-2.76/CGI/Request.pm	Sun Nov 17 05:18:18 1996
++++ CGI-modules-2.76.new/CGI/Request.pm	Sat Oct  2 23:34:35 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ package CGI::Request;
+ 
