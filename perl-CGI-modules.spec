@@ -5,7 +5,7 @@ Summary:	A set of modules for use in writing CGI scripts
 Summary(pl):	Zestaw modu³ów do wykorzystania przy pisaniu skryptów CGI
 Name:		perl-CGI-modules
 Version:	2.76
-Release:	9
+Release:	11
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
