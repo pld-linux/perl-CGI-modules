@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	CGI
 %define		pnam	modules
-Summary:	CGI::modules perl module
-Summary(pl):	Modu³ perla CGI::modules
+Summary:	A set of modules for use in writing CGI scripts
+Summary(pl):	Zestaw modu³ów do wykorzystania przy pisaniu skryptów CGI
 Name:		perl-CGI-modules
 Version:	2.76
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,11 +17,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CGI::modules is a set of modules for use in writing CGI scripts.
+This package contains a set of modules for use in writing CGI scripts.
 
 %description -l pl
-CGI::modules jest zestawem modu³ów do wykorzystania przy pisaniu
-skryptów CGI.
+Ten pakiet zawiera zestaw modu³ów do wykorzystania przy pisaniu skryptów
+CGI.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -38,14 +38,12 @@ rm -rf $RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_mandir}/man3/CGI::Carp.3pm
 
-gzip -9nf README doc/*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*
+%doc README
 %{perl_sitelib}/CGI/*.pm
 %{perl_sitelib}/CGI/test.pl
 %{_mandir}/man3/*
