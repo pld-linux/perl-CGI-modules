@@ -6,7 +6,8 @@ Summary(pl):	Zestaw modu³ów do wykorzystania przy pisaniu skryptów CGI
 Name:		perl-CGI-modules
 Version:	2.76
 Release:	13
-License:	GPL
+# same as perl (Artistic for Carp.pm)
+License:	GPL v1+ (except Carp.pm) or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	be3a6dff87ae14bbf54b60005ceb5bb3
