@@ -11,8 +11,8 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	be3a6dff87ae14bbf54b60005ceb5bb3
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl-devel >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 Requires:	perl-libwww
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -48,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_vendorlib}/CGI/[^C]*.pm
+%{perl_vendorlib}/CGI/[!C]*.pm
 %{_mandir}/man3/*
