@@ -1,0 +1,4 @@
+- removed CGI::Carp (newer version is in perl-CGI)
+- removed HTML documentation (the same as manuals)
+- fixed summaries/descriptions
+- release 9
