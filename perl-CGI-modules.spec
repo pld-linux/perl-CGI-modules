@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI-modules perl module
 Summary(pl):	Modu³ perla CGI-modules
 Name:		perl-CGI-modules
@@ -9,7 +9,8 @@ Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-modules-%{version}.tar.gz
 Patch:		perl-CGI-modules-paths.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-13
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Requires:	perl-libwww
