@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	CGI
 %define		pnam	modules
-Summary:	CGI-modules perl module
-Summary(pl):	Modu³ perla CGI-modules
+Summary:	CGI::modules perl module
+Summary(pl):	Modu³ perla CGI::modules
 Name:		perl-CGI-modules
 Version:	2.76
 Release:	8
@@ -17,10 +17,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CGI-modules is a set of modules for use in writing CGI scripts.
+CGI::modules is a set of modules for use in writing CGI scripts.
 
 %description -l pl
-CGI-modules jest zestawem modu³ów do wykorzystania przy pisaniu
+CGI::modules jest zestawem modu³ów do wykorzystania przy pisaniu
 skryptów CGI.
 
 %prep
