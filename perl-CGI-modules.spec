@@ -3,7 +3,7 @@ Summary:	CGI-modules perl module
 Summary(pl):	Modu³ perla CGI-modules
 Name:		perl-CGI-modules
 Version:	2.76
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
