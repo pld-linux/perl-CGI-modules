@@ -33,6 +33,8 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
+rm -f $RPM_BUILD_ROOT%{_mandir}/man3/CGI::Carp.3pm
+
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/CGI
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
