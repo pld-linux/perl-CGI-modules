@@ -3,12 +3,12 @@ Summary:	CGI-modules perl module
 Summary(pl):	Modu³ perla CGI-modules
 Name:		perl-CGI-modules
 Version:	2.76
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-modules-%{version}.tar.gz
-Patch0:		perl-CGI-modules-paths.patch
+Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -40,7 +40,7 @@ rm -f $RPM_BUILD_ROOT%{_mandir}/man3/CGI::Carp.3pm
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/CGI
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
