@@ -1,12 +1,11 @@
-%define	pdir	CGI
-%define	pnam	modules
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	CGI
+%define		pnam	modules
 Summary:	CGI-modules perl module
 Summary(pl):	Modu³ perla CGI-modules
 Name:		perl-CGI-modules
 Version:	2.76
 Release:	8
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ CGI-modules jest zestawem modu³ów do wykorzystania przy pisaniu
 skryptów CGI.
 
 %prep
-%setup -q -n CGI-modules-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build
