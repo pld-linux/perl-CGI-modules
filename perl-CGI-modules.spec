@@ -2,7 +2,7 @@
 %define		pdir	CGI
 %define		pnam	modules
 Summary:	A set of modules for use in writing CGI scripts
-Summary(pl):	Zestaw modu丑w do wykorzystania przy pisaniu skrypt體 CGI
+Summary(pl.UTF-8):   Zestaw modu艂贸w do wykorzystania przy pisaniu skrypt贸w CGI
 Name:		perl-CGI-modules
 Version:	2.76
 Release:	13
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains a set of modules for use in writing CGI scripts.
 
-%description -l pl
-Ten pakiet zawiera zestaw modu丑w do wykorzystania przy pisaniu skrypt體
+%description -l pl.UTF-8
+Ten pakiet zawiera zestaw modu艂贸w do wykorzystania przy pisaniu skrypt贸w
 CGI.
 
 %prep
