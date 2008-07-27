@@ -5,7 +5,7 @@ Summary:	A set of modules for use in writing CGI scripts
 Summary(pl.UTF-8):	Zestaw modułów do wykorzystania przy pisaniu skryptów CGI
 Name:		perl-CGI-modules
 Version:	2.76
-Release:	13
+Release:	14
 # same as perl (Artistic for Carp.pm)
 License:	GPL v1+ (except Carp.pm) or Artistic
 Group:		Development/Languages/Perl
