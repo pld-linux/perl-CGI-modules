@@ -1,6 +1,5 @@
 %define		pdir	CGI
 %define		pnam	modules
-%include	/usr/lib/rpm/macros.perl
 Summary:	A set of modules for use in writing CGI scripts
 Summary(pl.UTF-8):	Zestaw modułów do wykorzystania przy pisaniu skryptów CGI
 Name:		perl-CGI-modules
