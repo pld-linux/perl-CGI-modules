@@ -27,7 +27,7 @@ skryptów CGI.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 mv CGI/test.pl test.pl
 
 %build
